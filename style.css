@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #eeeeee;
-    font-family: Arial, Helvetica, sans-serif;
     /* background-image: url("img/uno.jpg"); */
     /* background-size: cover; */
     word-break: break-word;
@@ -12,7 +11,9 @@ body {
 .wrapper-topbar {
  position: sticky;
  height: 0px;
- top: 0px
+ top: -3vh;
+ z-index: 100;
+ transition: 0.6s;
 }
 
 #navbar {
@@ -22,7 +23,7 @@ body {
 
 .list {
     margin: 0 30px;
-    padding-top: 3vh;
+    padding-top: 5vh;
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
@@ -30,6 +31,7 @@ body {
 }
 
 .element-list {
+    font-family: "Montserrat", sans-serif;
     font-size: 12px;
     margin: 0px 10px ;
     padding: 10px 20px;
@@ -41,8 +43,8 @@ body {
 
 .element-list:hover {
     content: ' hola';
-    color: black;
-    background-color:whitesmoke;
+    color: rgb(221, 221, 221);
+    background-color:rgb(41, 41, 41);
     transition: 0.5s;
 }
 
@@ -65,18 +67,57 @@ ul li a::after {
 }
 
 .front {
+    font-family: 'Roboto', sans-serif;
+    font-size: 90px;
+    font-weight: 900;
+    letter-spacing: 3px;
     margin: 0; 
     color: white;
     align-self: center;
-    font-size: 100px;
     position: relative;
     left: 17%;
 }
 
 .img-front p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
     font-size: 20px;
     color: white;
     align-self: center;
     position: relative;
     left: 20%;
+}
+
+.grid {
+    width: 100%;
+    margin-top: 50px;
+    display: inline-grid;
+    grid-template-columns: [col-1-inicio] 1fr [col-2-inicio] 1fr [col-3-inicio] 1fr [col-4-fin];
+    grid-template-rows: [row-1-inicio] 1fr [row-2-inicio] 1fr [row-3-fin];
+    grid-gap: 15px;
+}
+
+.grid-element {
+    margin: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: rgb(88, 88, 88);
+    /* border: 1px solid #ccc; */
+    border-radius: 80px;
+    padding: 20px;
+    text-align: center;
+}
+
+.img-grid1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    transition: 0.8s;
+}
+
+.img-grid1:hover {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    cursor: pointer;
 }
