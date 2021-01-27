@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-image: url("img/uno.jpg"); */
+    /* background-size: cover; */
+    word-break: break-word;
+    max-width: 100vw;
+}
+
+.wrapper-topbar {
+ position: sticky;
+ height: 0px;
+ top: 0px
+}
+
+#navbar {
+    background-color: rgb(27, 27, 27);
+    height: 12vh;
+}
+
+.list {
+    margin: 0 30px;
+    padding-top: 3vh;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+.element-list {
+    font-size: 12px;
+    margin: 0px 10px ;
+    padding: 10px 20px;
+    color: rgb(221, 221, 221);
+    cursor: pointer;
+    user-select: none;
+    border-radius: 15px;
+}
+
+.element-list:hover {
+    content: ' hola';
+    color: black;
+    background-color:whitesmoke;
+    transition: 0.5s;
+}
+
+ul li a::after {
+    content: " ";
+    color: black;
+    background-color:rgba(255, 255, 255, .9);
+    transition: 0.5s;
+}
+
+.img-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("img/dos.jpg");
+    background-position: bottom;
+    background-size: cover;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.front {
+    margin: 0; 
+    color: white;
+    align-self: center;
+    font-size: 100px;
+    position: relative;
+    left: 17%;
+}
+
+.img-front p {
+    font-size: 20px;
+    color: white;
+    align-self: center;
+    position: relative;
+    left: 20%;
+}
