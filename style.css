@@ -42,11 +42,11 @@ body {
     color: rgb(221, 221, 221);
     cursor: pointer;
     user-select: none;
-    border-radius: 15px;
 }
 .element-list a {
     z-index: 300;
     padding: 10px 20px;
+    border-radius: 16px;
 }
 
 .element-list a:link {
@@ -85,14 +85,15 @@ ul li a::after {
 }
 .mark {
     width: 50%;
+    text-shadow: 3px 3px rgb(27, 27, 27);
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 500;
     letter-spacing: 3px;
-    margin: 500px 0px 0 15%; 
+    margin: -20vh 0px 20vh 15%; 
     color: white;
     position: sticky;
-    top: 2vh;
+    top: 1vh;
     z-index: 200;
 }
 .front {
@@ -104,7 +105,7 @@ ul li a::after {
     margin: 0 0px 0 15%; 
     color: white;
     position: relative;
-    top: 35vh;
+    top: 2vh;
     left: 30%;
     z-index: 200;
 }
@@ -117,8 +118,8 @@ ul li a::after {
     color: white;
     align-self: center;
     position: relative;
-    top: 35vh;  
-    left: 12%;
+    top: 2vh;  
+    left: 15%;
     bottom: 45vh;
 }
 .img-front p::after {
@@ -135,9 +136,10 @@ ul li a::after {
 .grid {
     width: 100%;
     margin-top: 50px;
+    padding-top: 14vh;
     display: inline-grid;
     grid-template-columns: [col-1-inicio] 1fr [col-2-inicio] 1fr [col-3-inicio] 1fr [col-4-fin];
-    grid-template-rows: [row-1-inicio] 1fr [row-2-inicio] 1fr [row-3-inicio] 0px [row-4-fin];
+    grid-template-rows: [row-1-inicio] 1fr [row-2-inicio] 3fr [row-3-inicio] 0px [row-4-fin];
     grid-gap: 15px;
     z-index: 50;
 }
