@@ -46,18 +46,17 @@ body {
     transition: 0.8s;
 }
 
-@media only screen and (min-width: 780px) { 
-    .element-list a{
+@media only screen and (min-width: 780px) {
+    .element-list a {
         padding: 2rem;
     }
-    
 }
 
 .element-list a:link {
     text-decoration: none;
     color: white;
 }
-.element-list:hover{
+.element-list:hover {
     color: rgb(154, 252, 255);
 }
 
@@ -133,7 +132,7 @@ body {
     margin-top: 50px;
     padding-top: 0vh;
     display: grid;
-    grid-template-columns:  .1fr 1fr [col-1-inicio] 1fr [col-2-inicio] 1fr [col-3-inicio] .1fr [col-4-fin];
+    grid-template-columns: 0.1fr 1fr [col-1-inicio] 1fr [col-2-inicio] 1fr [col-3-inicio] 0.1fr [col-4-fin];
     grid-template-rows: [row-1-inicio] 4fr [row-2-inicio] 0fr [row-3-inicio] 0 [row-4-fin];
     grid-gap: 20px;
     z-index: 50;
@@ -173,7 +172,7 @@ body {
     border-radius: 100%;
 }
 
-.mobile{
+.mobile {
     display: none;
 }
 
@@ -209,18 +208,15 @@ footer span {
         position: fixed;
         z-index: 100;
         width: 100%;
-       }
+    }
 
-    .mark{
+    .mark {
         font-size: 1.5rem;
         position: sticky;
         top: 0.5rem;
         margin-left: 2rem;
         width: 60%;
     }
-}
-
-@media only screen and (max-width: 780px) {
     .front {
         font-size: 35px;
         margin: 0;
@@ -228,11 +224,8 @@ footer span {
         width: 70%;
         position: relative;
         left: 70px;
-        top: -70px
+        top: -70px;
     }
-}
-
-@media only screen and (max-width: 780px) {
     .img-front p {
         font-family: "Montserrat", sans-serif;
         width: 60%;
@@ -240,13 +233,11 @@ footer span {
         font-size: 16px;
         align-self: center;
         position: relative;
-        top: -40px;  
+        top: -40px;
         left: 10%;
         bottom: 45vh;
     }
-}
 
-@media only screen and (max-width: 780px) {
     .img-front p::after {
         content: " ";
         display: inline-block;
@@ -258,26 +249,21 @@ footer span {
         right: 10px;
         transition: 0.6s;
     }
-}
-
-@media only screen and (max-width: 780px) {
-    .grid{
-        overflow-y:scroll;
+    .grid {
+        overflow-y: scroll;
         scroll-behavior: smooth;
         scroll-snap-align: center;
         display: flex;
         flex-direction: row;
     }
-}
-@media only screen and (max-width: 780px) {
-    .list{display: none;
+    .list {
+        display: none;
     }
-}
-@media only screen and (max-width: 780px) {
-    .navbar{
+
+    .navbar {
         height: 8vh;
     }
-    .mobile{
+    .mobile {
         width: 1.6rem;
         display: block;
         position: absolute;
