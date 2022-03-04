@@ -11,14 +11,14 @@ body {
 }
 
 .wrapper-topbar {
- position: sticky;
- height: 0px;
- top: -3vh;
- z-index: 100;
- transition: 0.6s;
+    position: sticky;
+    height: 0px;
+    top: -3vh;
+    z-index: 100;
+    transition: 0.6s;
 }
 
-#navbar {
+.navbar {
     background-color: rgb(27, 27, 27);
     height: 12vh;
 }
@@ -34,8 +34,7 @@ body {
 
 .element-list {
     font-family: "Montserrat", sans-serif;
-    font-size: 12px;
-    margin: 10px 10px ;
+    font-size: 14px;
     padding: 0px 0px;
     color: rgb(221, 221, 221);
     cursor: pointer;
@@ -43,14 +42,25 @@ body {
 }
 .element-list a {
     z-index: 300;
-    padding: 10px 20px;
-    border-radius: 16px;
+    padding: auto 5px;
+    transition: 0.8s;
+}
+
+@media only screen and (min-width: 780px) { 
+    .element-list a{
+        padding: 2rem;
+    }
+    
 }
 
 .element-list a:link {
     text-decoration: none;
     color: white;
 }
+.element-list:hover{
+    color: rgb(154, 252, 255);
+}
+
 .element-list a:visited {
     text-decoration: none;
     color: white;
@@ -71,11 +81,11 @@ body {
 .mark {
     width: 50%;
     text-shadow: 3px 3px rgb(27, 27, 27);
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 30px;
     font-weight: 500;
     letter-spacing: 3px;
-    margin: -20vh 0px 0 15%; 
+    margin: -20vh 0px 0 15%;
     color: white;
     position: sticky;
     top: 1.8vh;
@@ -84,11 +94,11 @@ body {
 }
 .front {
     width: 22%;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 50px;
     font-weight: 900;
     letter-spacing: 3px;
-    margin: 0 0px 0 15%; 
+    margin: 0 0px 0 15%;
     color: white;
     position: relative;
     top: 2vh;
@@ -102,7 +112,7 @@ body {
     color: white;
     align-self: center;
     position: relative;
-    top: 2vh;  
+    top: 2vh;
     left: 15%;
     bottom: 45vh;
 }
@@ -150,7 +160,7 @@ body {
 }
 
 .title-grid {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 24px;
     font-weight: 500;
     color: rgb(88, 88, 88);
@@ -163,13 +173,9 @@ body {
     border-radius: 100%;
 }
 
-/* .img-grid1:hover {
-    transition: 0.8s;
-    transition-duration: 0.8s;
-    width: 220px;
-    height: 220px;
-    cursor: pointer;
-} */
+.mobile{
+    display: none;
+}
 
 .desc-grid {
     font-family: "Montserrat", sans-serif;
@@ -196,7 +202,6 @@ footer span {
     font-size: 12px;
 }
 
-
 /* RESPONSIVE */
 
 @media only screen and (max-width: 780px) {
@@ -205,16 +210,13 @@ footer span {
         z-index: 100;
         width: 100%;
        }
-}
 
-@media only screen and (max-width: 780px) {
-    .list {
-        margin: 0 10px;
-        padding-top: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        list-style-type: none;
-        justify-content: flex-end;
+    .mark{
+        font-size: 1.5rem;
+        position: sticky;
+        top: 0.5rem;
+        margin-left: 2rem;
+        width: 60%;
     }
 }
 
@@ -259,8 +261,28 @@ footer span {
 }
 
 @media only screen and (max-width: 780px) {
-    .grid-element {
-        display: none;
+    .grid{
+        overflow-y:scroll;
+        scroll-behavior: smooth;
+        scroll-snap-align: center;
+        display: flex;
+        flex-direction: row;
     }
 }
-
+@media only screen and (max-width: 780px) {
+    .list{display: none;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .navbar{
+        height: 8vh;
+    }
+    .mobile{
+        width: 1.6rem;
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 2rem;
+        fill: rgba(255, 255, 255, 0.445);
+    }
+}
