@@ -154,7 +154,7 @@ body {
     transition-duration: 1s;
     transform: scale(1.1);
     border-radius: 100%;
-    /* cursor: pointer; */
+    cursor: pointer;
     background-color: rgb(249, 249, 249);
 }
 
@@ -175,6 +175,9 @@ body {
 .mobile {
     display: none;
 }
+.modal {
+    display: none;
+}
 
 .desc-grid {
     font-family: "Montserrat", sans-serif;
@@ -191,6 +194,7 @@ footer {
     background-color: rgb(27, 27, 27);
     display: flex;
     justify-content: center;
+    padding-top: 2rem;
 }
 
 footer span {
@@ -249,7 +253,12 @@ footer span {
         right: 10px;
         transition: 0.6s;
     }
+
+    .home {
+        text-decoration: none;
+    }
     .grid {
+        padding-bottom: 1rem;
         overflow-y: scroll;
         scroll-behavior: smooth;
         scroll-snap-align: center;
@@ -268,7 +277,47 @@ footer span {
         display: block;
         position: absolute;
         right: 5%;
-        top: 2rem;
+        top: 2.2rem;
         fill: rgba(255, 255, 255, 0.445);
+        background-color: transparent;
+        border: 0;
+    }
+    .mobile:hover {
+        fill: rgb(117, 191, 194);
+    }
+
+    .lista {
+        display: none;
+    }
+
+    .displayMobile{
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 5rem;
+        padding: 30px;
+        margin: 0 auto;
+        background-color: rgba(180, 180, 180, 0.726);
+        border-radius: 8px;
+        transition: 1s;
+    }
+
+    .displayMobile ul {
+        padding: 0;
+        color: #fff;
+    }
+
+    .displayMobile ul a:link {
+        text-decoration: none;
+        color: white;
+    }
+
+    .displayMobile ul a:visited {
+        color: white;
+    }
+
+    .footer {
+        height: 80px;
+        padding-top: 1rem;
     }
 }

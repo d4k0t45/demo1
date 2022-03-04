@@ -1,11 +1,11 @@
-$(document).ready(function(){
-    var altura =$('.menu').offset().top;
-
-    $(window).on('scroll', function(){
-        if ( $(window).scrollTop() > altura ){
-            $('.menu').addClass('menu-fixed');
-        } else {
-            $('.menu').removeClass('menu-fixed');
-        }
+/* mobile */
+const a = () => {
+    const burgir = document.querySelector(".lista");
+    if (burgir.classList.contains('lista')) {
+        burgir.classList.remove('mobile')
+        burgir.classList.add('displayMobile');
+    } else if (burgir.classList.contains('lista')){
+        burgir.classList.remove('displayMobile');
+        burgir.classList.add('mobile')
     }
 }
